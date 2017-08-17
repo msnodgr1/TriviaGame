@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia Game!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:600" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="jumbotron">
+				  <h1>CLEVELAND BROWNS</h1>
+				  <p>TRIVIA</p>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="container main">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<div class="start">
+					<h1>Click Start To Begin</h1>
+					<button type="button" class="btn btn-default start" id="startBtn">Start</button>
+				</div>
+			</div>
+			<div class="col-md-4"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<div class="end">
+					<h1>Game Over</h1>
+					<ul>
+						<li id="correct">Correct Answers:</li>
+						<li id="incorrect">Incorrect Answers:</li>
+						<li id="unanswered">Unanswered:</li>
+					</ul>
+					<button type="button" class="btn btn-default restart" id="restartBtn">Restart</button>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<nav class="navbar navbar-default navbar-fixed-bottom">
+					<div class="container timekeeping">
+						<h1 id="time">Time Remaining: 20</h1>
+					</div>
+				</nav>		
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="trivia">
+					<h1 class="question" id="q1">1. Who did the Browns draft with their first pick in the 1999 NFL Draft?</h1>
+					<span class="answers1">
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq1" id="a1-1" value="incorrect"> Eddie George
+						</label>
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq1" id="a1-2" value="correct"> Tim Couch
+						</label>
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq1" id="a1-3" value="incorrect"> Ricky Williams
+						</label>
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq1" id="a1-4" value="incorrect"> Derek Anderson
+						</label>
+					</span>
+					<br>
+					<h1 class="question" id="q2">2. Who are the Browns named after?</h1>
+					<span class="answers2">
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq2" id="a2-1" value="incorrect"> James Brown
+						</label>
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq2" id="a2-2" value="incorrect"> Joseph Brown
+						</label>
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq2" id="a2-3" value="correct"> Paul Brown
+						</label>
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq2" id="a2-4" value="incorrect"> Jim Brown
+						</label>
+					</span>
+					<br>
+					<h1 class="question" id="q3">3.Who is the all-time rushing leader for the Browns?</h1>
+					<span class="answers3">
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq3" id="a3-1" value="incorrect"> Issiah Crowell
+						</label>
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq3" id="a3-2" value="incorrect"> Josh Cribbs
+						</label>
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq3" id="a3-3" value="incorrect"> Peyton Hillis
+						</label>
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq3" id="a3-4" value="correct"> Jim Brown
+						</label>
+					</span>
+					<br>
+					<h1 class="question" id="q4">4. Who is the all-time passing leader for the Browns?</h1>
+					<span class="answers4">
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq4" id="a4-1" value="correct"> Brian Sipe
+						</label>
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq4" id="a4-2" value="incorrect"> Bernie Kosar
+						</label>
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq4" id="a4-3" value="incorrect"> Brandon Weeden
+						</label>
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq4" id="a4-4" value="incorrect"> Brian Hoyer
+						</label>
+					</span>
+					<br>
+					<h1 class="question" id="q5">5. Who moved the franchise from Cleveland to Baltimore in 1996?</h1>
+					<span class="answers5">
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq5" id="a5-1" value="incorrect"> Jimmy Haslam
+						</label>
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq5" id="a5-2" value="correct"> Art Modell
+						</label>
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq5" id="a5-3" value="incorrect"> Al Lerner
+						</label>
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq5" id="a5-4" value="incorrect"> Arthur McBride
+						</label>
+					</span>
+					<h1 class="question" id="q6">6. Who threw 308 passes before throwing an interception?</h1>
+					<span class="answers6">
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq6" id="a6-1" value="correct"> Bernie Kosar
+						</label>
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq6" id="a6-2" value="incorrect"> Brandon Weeden
+						</label>
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq6" id="a6-3" value="incorrect"> Jeff Garcia
+						</label>
+						<label class="radio-inline answer">
+  							<input type="radio" name="radioq6" id="a6-4" value="incorrect"> Vinnie Testaverde
+						</label>
+					</span>
+				</div>	
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>

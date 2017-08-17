@@ -1,0 +1,89 @@
+body{
+	background-image: url(../images/grass.jpg);
+	padding-bottom: 150px;
+}
+
+.jumbotron{
+	font-family: 'Alfa Slab One', cursive;
+	color: #FFFFFF;
+	background-color: #FF3300;
+	border-bottom-style: 10px;
+	text-align: center;
+}
+
+.jumbotron h1{
+	border-bottom-style: solid;
+	border-bottom-color: #321D00;
+	border-bottom-width: 20px;
+}
+
+.jumbotron p{
+	font-size: 40px;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+
+
+
+.trivia  {
+	text-align: left;
+	background-color: #321D00;
+	color: #FFF;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 40px;
+	padding: 30px;
+	border-style: solid 5px !important;
+	border-color: #FFF !important;
+	
+}
+
+
+.answer{
+	font-size: 25px;
+}
+
+.navbar{
+	background-color: #321D00;
+	color: #FFF;
+	height: 10%;
+	text-align: center;
+	border-top-style: solid 5px;
+	border-top-color: #FFF;
+	font-family: 'Josefin Sans', sans-serif;
+	
+
+}
+
+
+
+.start{
+	padding: 20px;
+	text-align: center;
+	background-color: #321D00;
+	color: #FFF;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.end{
+	padding: 20px;
+	background-color: #321D00;
+	color: #FFF;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 30px;
+	
+}
+
+.end h1{
+	text-align: center !important;
+	font-size: 40px;
+}
+
+.restart{
+	margin-left: 45%;
+	font-size: 20px;
+	background-color: #321D00;
+	color: #FFF;
+}
+
+
